@@ -22,7 +22,7 @@ const Users = () => {
   return (
     <div>
       <SearchUser getUserSearch={searchUsersFromGit} />
-      <div className="grid grid-cols-3 gap-4 mt-3">
+      <div className="grid grid-cols-1 tablet:grid-cols-2  laptop:grid-cols-3 gap-4 mt-3">
       {users.map((user) => (
           <User key={user.id} user={user} />
       ))}
